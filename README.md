@@ -19,4 +19,4 @@ sudo npm install -g node-gyp
 
 npm install walk node-mpg123 serialport
 
-sudo apt-get install mpg123
+sudo apt-get install mpg123 libasound2-dev
