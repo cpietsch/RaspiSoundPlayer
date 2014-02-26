@@ -18,3 +18,5 @@ sudo npm install -g node-gyp
 ## packages
 
 npm install walk node-mpg123 serialport
+
+sudo apt-get install mpg123
