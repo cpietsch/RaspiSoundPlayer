@@ -17,6 +17,6 @@ sudo npm install -g node-gyp
 
 ## packages
 
-npm install walk node-mpg123 serialport
+npm install walk node-mpg123 serialport lame
 
-sudo apt-get install mpg123 libasound2-dev
+sudo apt-get install mpg123 libasound2-dev lame pulseaudio 
