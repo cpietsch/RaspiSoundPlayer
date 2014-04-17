@@ -5,18 +5,13 @@ RaspiSoundPlayer
 
 sudo dd bs=1m if=2014-01-07-wheezy-raspbian.img of=/dev/rdisk
 
-diskutil eject /dev/disk2
+sudo sync
 
-## install node
+diskutil eject /dev/disk
 
-wget http://node-arm.herokuapp.com/node_latest_armhf.deb
+## raspi Sound player
 
-sudo dpkg -i node_latest_armhf.deb
+based on http://www.imthi.com/blog/electronics/capacitive-touch-drumkit-with-raspberry-pi-using-mrp121.php and http://scott.j38.net/interactive/beetbox/
 
-sudo npm install -g node-gyp
-
-## packages
-
-npm install walk node-mpg123 serialport lame
-
-sudo apt-get install mpg123 libasound2-dev lame pulseaudio 
+autostart
+sudo nano /etc/rc.local
