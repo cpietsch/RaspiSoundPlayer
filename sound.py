@@ -28,15 +28,16 @@ mpr121.setup(0x5a)
 pygame.mixer.pre_init(44100, -16, 12, 512)
 pygame.init()
 
-sounds = []
+sounds = {}
 lastTouch = 0
 
-for file in os.listdir("./wav"):
+for file in os.listdir("/home/pi/sound/wav"):
 	if file.endswith(".wav"):
-		Sound = pygame.mixer.Sound("wav/" + file)
+		index = int(file.split('.')[0])
+		Sound = pygame.mixer.Sound("/home/pi/sound/wav/" + file)
 		Sound.set_volume(.85);
-		sounds.append(Sound)
-		print( 'loaded ' + file)
+		sounds[index] = Sound
+		print( 'loaded ' + file + " : " + str(index))
 
 
 touches = [0] * len(sounds);
