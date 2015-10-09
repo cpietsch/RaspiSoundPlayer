@@ -33,6 +33,7 @@ sudo apt-get remove dphys-swapfile
 * http://raspberrypi.stackexchange.com/questions/169/how-can-i-extend-the-life-of-my-sd-card
 * put "sudo swapoff --all" in 
 sudo nano /etc/fstab
+tmpfs   /var/log    tmpfs    defaults,noatime,nosuid,mode=0755,size=100m    0 0
 
 sudo apt-get purge --auto-remove 'libx11-.*'
 
