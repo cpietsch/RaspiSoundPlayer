@@ -51,3 +51,6 @@ dtparam=audio=on
 gpu_mem=256
 dtparam=i2c_arm=on
 ```
+
+# cache fix
+http://www.yourownlinux.com/2013/10/how-to-free-up-release-unused-cached-memory-in-linux.html
