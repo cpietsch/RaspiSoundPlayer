@@ -9,6 +9,10 @@ sudo sync
 
 diskutil eject /dev/disk
 
+# find raspis on network
+
+```nmap -sP 192.168.10.1/24```
+
 ## raspi Sound player
 
 based on http://www.imthi.com/blog/electronics/capacitive-touch-drumkit-with-raspberry-pi-using-mrp121.php and http://scott.j38.net/interactive/beetbox/
